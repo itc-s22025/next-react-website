@@ -6,18 +6,18 @@ const Nav = () =>{
 		<nav>
 			<ul className={styles.list}>
 				<li>
-					<Link href="/" passHref legacyBehavior> 
-						<a>HOME</a>
+					<Link href="/"> 
+						HOME
 					</Link>
 				</li>
 				<li>
-					<Link legacyBehavior href="/about">
-						<a>About</a>
+					<Link href="/about">
+						About
 					</Link>
 				</li>
 				<li>
-					<Link legacyBehavior href="/blog">
-						<a>Blog</a>
+					<Link href="/blog">
+						Blog
 					</Link>
 				</li>
 				
