@@ -10,6 +10,29 @@ import {
 
 const Social = () =>{
 	return (
-		
+		<ul className={styles.list}>
+			<li>
+			 <a href="https://twitter.com/">
+				<FontAwesomeIcon icon={faTwitter} />
+				<span className="sr-only">Twitter</span>
+			 </a>
+			</li>
+
+			<li>
+			 <a href="https://www.facebook.com/">
+				<FontAwesomeIcon icon={faFacebook} />
+				<span className="sr-only">Facebook</span>
+			 </a>
+			</li>
+
+			<li>
+			 <a href="https://github.com/">
+				<FontAwesomeIcon icon={faGithub} />
+				<span className="sr-only">Github</span>
+			 </a>
+			</li>
+		</ul>
 	)
 }
+
+export default Social
