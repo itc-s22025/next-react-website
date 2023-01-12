@@ -19,6 +19,8 @@
 	}
 }
 
-@media a:activ{
+@media a :activ{
 	color: var(--accent);
 }
+
+
