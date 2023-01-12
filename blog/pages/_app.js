@@ -5,6 +5,11 @@ import Layout from 'components/layout'
   return <Component {...pageProps} />
 }*/
 
+// Font Awsome の設定
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import {config} from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
+
 const MyApp = ({ Component, pageProps}) =>{
 	return(
 		<Layout>
