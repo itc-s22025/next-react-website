@@ -7,10 +7,8 @@ const nextConfig = {
 	/*images:{
 		remotePatterns:[
 		{
-			protocol: 'https',
-			hostname: 'images.microcms-assets.io',
-			port: '',
-			pathname: '/assets/',
+			loader: 'image-loader.js',
+			path: 'https://images.microcms-assets.io/assets/',
 		}
 		]
 	},*/

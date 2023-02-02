@@ -5,7 +5,8 @@ import PostHeader from 'components/post-header'
 import PostBody from 'components/post-body'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import ConvertBody from 'components/convert-body'
-//import Image from 'next/image'
+import PostCategories from 'components/post-categories'
+import Image from 'next/legacy/image'
 
 
 export default function Schedule({ title, publish, content, eyecatch, categories, }) {
@@ -14,7 +15,7 @@ export default function Schedule({ title, publish, content, eyecatch, categories
 			<article>
 				<PostHeader title={title} subtitle="Blog Article" publish={publish} />
 				<figure>
-					<div 
+					<Image 
 					src={eyecatch.url} 
 					alt="" 
 					layout="responsive" 
@@ -28,11 +29,12 @@ export default function Schedule({ title, publish, content, eyecatch, categories
 				<TwoColumn>
 					<TwoColumnMain>
 						<PostBody>
-							//<div dangerouslySetInnerHTML={{__html: content}} />
-							//<ConvertBody contentHTML={content} />
+							<ConvertBody contentHTML={content} />
 						</PostBody>
 					</TwoColumnMain>
-					<TwoColumnSidebar></TwoColumnSidebar>
+					<TwoColumnSidebar>
+						<PostCategories categories={categories} />
+					</TwoColumnSidebar>
 				</TwoColumn>
 			</article>
 		</Container>
