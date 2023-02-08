@@ -1,11 +1,5 @@
-import styles from 'styles/container.module.css'
+import s from 'styles/container.module.css'
 
-const Container = ({ children, large = false }) =>{
-	return (
-		<div className={large ? styles.large : styles.default}>
-			{children}
-		</div>
-	)
+export default function Container ({ children, large = false }) {
+  return <div className={large ? s.large : s.def}>{children}</div>
 }
-
-export default Container
