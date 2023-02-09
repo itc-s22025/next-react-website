@@ -3,9 +3,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Posts = ({ posts }) => {
+//	console.log(posts)
 	return(
 		<div className={styles.gridContainer}>
-			{posts.map(({ title, slug, eyecatch }) => (
+			{posts.map(({ title,slug,eyecatch }) => (
 				<article className={styles.post} key={slug}>
 					<Link href={`/blog/${slug}`}>
 						<figure>
@@ -18,8 +19,8 @@ const Posts = ({ posts }) => {
 							placeholder="blur"
 							blurDataURL={eyecatch.blurDataURL}
 							/>
-							<h2>{title}</h2>
 						</figure>
+							<h2>{title}</h2>
 					</Link>
 				</article>
 			))}
