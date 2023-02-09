@@ -31,6 +31,7 @@ export default function Post({ title, description, publish, content, eyecatch, c
 				<PostHeader title={title} subtitle="Blog Article" publish={publish} />
 				<figure>
 					<Image 
+					key={eyecatch.url}
 					src={eyecatch.url} 
 					alt="" 
 					layout="responsive" 

@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Posts = ({ posts }) => {
-//	console.log(posts)
 	return(
 		<div className={styles.gridContainer}>
 			{posts.map(({ title,slug,eyecatch }) => (
